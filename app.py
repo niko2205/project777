@@ -30,7 +30,7 @@ age = st.number_input('Возраст', min_value=18, max_value=80)
 gender = st.selectbox('Пол', ['Мужской', 'Женский'])
 citizenship = st.selectbox('Гражданство', ['Россия', 'Украина', 'Казахстан'])
 income = st.number_input('Зарплата', min_value=0)
-employment_status = st.selectbox('Статус занятости', ['Работаю', 'Неработаю'])
+employment_status = st.selectbox('Статус занятости', ['Работаю', 'Не работаю'])
 marital_status = st.selectbox('Семейное положение', ['Женат/Замужем', 'Холост'])
 children = st.number_input('Количество детей', min_value=0, max_value=10)
 
@@ -43,7 +43,7 @@ user_data = {
     'citizenship_Kazakhstan': int(citizenship == 'Казахстан'),
     'income': income,
     'employment_status_Employed': int(employment_status == 'Работаю'),
-    'employment_status_Unemployed': int(employment_status == 'Неработаю'),
+    'employment_status_Unemployed': int(employment_status == 'Не работаю'),
     'marital_status_Married': int(marital_status == 'Женат/Замужем'),
     'marital_status_Single': int(marital_status == 'Холост'),
     'children': children
