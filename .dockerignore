@@ -1,8 +1,1 @@
-.vscode
-__pycache__
-*.pyc
-*.pyo
-*.egg-info
-*.egg
-/venv
-.DS_Store
+
